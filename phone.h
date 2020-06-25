@@ -1,6 +1,7 @@
 #ifndef __PHONE_H__
 #define __PHONE_H__
-
+#include <stdio.h>
+#include <stdlib.h>
 enum select { Register = 1, Print, Search, Delete, Sort, Exit };
 
 typedef struct TelephoneBook
@@ -32,5 +33,8 @@ void printArray(void*, int);
 void searchByName();
 void DeleteByName();
 void sort();
+void save_Information();
+Contact* loadList(FILE*);
+void deleteStruct(char*);
 
 #endif

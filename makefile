@@ -1,6 +1,6 @@
 .SUFFIXES = .c .o
 $(CC) = gcc
-OBJECTS = register.o print.o search.o delete.o sort.o hw7Main.o
+OBJECTS = register.o print.o search.o delete.o sort.o hw8Main.o
 CFLAGS = -Wall -g
 TARGET = phonebook
 
